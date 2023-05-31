@@ -1,27 +1,26 @@
-import { createContext, useContext } from "react";
 import { useUser, UseUser } from "./useUser";
+import { createGenericContext } from "../createGenericContext";
 
 interface Props {
     children: React.ReactNode;
 }
 
-const UserContext = createContext<UseUser>(undefined!);
+const [useUserContext, UserContextProvider] = createGenericContext<UseUser>();
 
 const UserProvider = ({ children }: Props) => {
 
     const userUserData = useUser();
 
     return (
-        <UserContext.Provider
+        <UserContextProvider
             value={{ ...userUserData }}
         >
             {children}
-        </UserContext.Provider>
+        </UserContextProvider>
     );
 };
 
-const useUserContext = () => {
-    return useContext(UserContext);
+export {
+    UserProvider,
+    useUserContext,
 };
-
-export { UserProvider, useUserContext };
