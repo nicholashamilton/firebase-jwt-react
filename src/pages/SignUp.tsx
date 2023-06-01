@@ -17,7 +17,6 @@ export default function SignUp() {
     const [formUser, setFormUser] = useState({
         email: '',
         password: '',
-        username: '',
     });
 
     function handleUserInputChange(e: React.FormEvent<HTMLInputElement>) {
