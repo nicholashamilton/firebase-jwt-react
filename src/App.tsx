@@ -1,8 +1,9 @@
-import ToastNotifications from "./components/ToastNotifications";
-import { UserProvider } from "./context/user/useUserContext";
-import "./styles/App.scss";
+import ToastNotifications from "@/components/ToastNotifications";
+import { UserProvider } from "@/context/user/useUserContext";
+import router from "@/router";
 import { RouterProvider } from 'react-router-dom';
-import router from "./router";
+
+import "@/styles/App.scss";
 
 function App() {
     return (

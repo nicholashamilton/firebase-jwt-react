@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useUserContext } from "../../context/user/useUserContext";
+import { useUserContext } from "@/context/user/useUserContext";
 import { useNavigate } from "react-router-dom";
 
 export const useRedirectToProfileIfUser = () => {

@@ -1,6 +1,6 @@
 
 import { signOut } from "firebase/auth";
-import { auth } from "../lib/firebase";
+import { auth } from "@/lib/firebase";
 
 export default function SignOutButton(props: {
     className?: string;

@@ -1,11 +1,11 @@
 import { Route, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
-import RootLayout from "./layouts/RootLayout";
+import RootLayout from "@/layouts/RootLayout";
 
-import Home from "./pages/Home";
-import Login from "./pages/Login";
-import SignUp from "./pages/SignUp";
-import ForgotPassword from "./pages/ForgotPassword";
-import EditUser from "./pages/EditUser";
+import Home from "@/pages/Home";
+import Login from "@/pages/Login";
+import SignUp from "@/pages/SignUp";
+import ForgotPassword from "@/pages/ForgotPassword";
+import EditUser from "@/pages/EditUser";
 
 const router = createBrowserRouter(
     createRoutesFromElements(

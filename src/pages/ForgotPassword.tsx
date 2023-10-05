@@ -1,10 +1,10 @@
 import { FormEvent, useState } from "react";
-import { useRedirectToProfileIfUser } from "../hooks/user/useRedirectToProfileIfUser";
-import { useUserContext } from "../context/user/useUserContext";
+import { useRedirectToProfileIfUser } from "@/hooks/user/useRedirectToProfileIfUser";
+import { useUserContext } from "@/context/user/useUserContext";
 import { sendPasswordResetEmail } from "firebase/auth";
-import { auth, firebaseErrorRecord, isFirebaseError } from "../lib/firebase";
+import { auth, firebaseErrorRecord, isFirebaseError } from "@/lib/firebase";
 import { toast } from "react-toastify";
-import SEO from "../components/SEO";
+import SEO from "@/components/SEO";
 
 export default function ForgotPassword() {
 

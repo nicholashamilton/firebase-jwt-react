@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import SignOutButton from "./SignOutButton";
-import { useUserContext } from "../context/user/useUserContext";
+import SignOutButton from "@/components/SignOutButton";
+import { useUserContext } from "@/context/user/useUserContext";
 
 export default function Header() {
 

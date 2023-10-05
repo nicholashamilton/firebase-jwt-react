@@ -1,10 +1,10 @@
 import { FormEvent, useState } from "react";
-import { useUserContext } from "../context/user/useUserContext";
-import { useRedirectToProfileIfUser } from "../hooks/user/useRedirectToProfileIfUser";
+import { useUserContext } from "@/context/user/useUserContext";
+import { useRedirectToProfileIfUser } from "@/hooks/user/useRedirectToProfileIfUser";
 import { toast } from "react-toastify";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { auth, firebaseErrorRecord, isFirebaseError } from "../lib/firebase";
-import SEO from "../components/SEO";
+import { auth, firebaseErrorRecord, isFirebaseError } from "@/lib/firebase";
+import SEO from "@/components/SEO";
 
 export default function SignUp() {
 

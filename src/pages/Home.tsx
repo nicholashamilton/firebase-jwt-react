@@ -1,5 +1,5 @@
-import SEO from "../components/SEO";
-import { useUserContext } from "../context/user/useUserContext";
+import SEO from "@/components/SEO";
+import { useUserContext } from "@/context/user/useUserContext";
 
 export default function Home() {
 

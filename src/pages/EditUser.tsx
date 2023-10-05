@@ -1,7 +1,7 @@
 import { FormEvent, useEffect, useState } from "react";
-import { useUserContext } from "../context/user/useUserContext";
-import { useRedirectToLoginIfNoUser } from "../hooks/user/useRedirectToLoginIfNoUser";
-import SEO from "../components/SEO";
+import { useUserContext } from "@/context/user/useUserContext";
+import { useRedirectToLoginIfNoUser } from "@/hooks/user/useRedirectToLoginIfNoUser";
+import SEO from "@/components/SEO";
 import { sendEmailVerification, updateEmail, updateProfile } from "firebase/auth";
 import { toast } from "react-toastify";
 
